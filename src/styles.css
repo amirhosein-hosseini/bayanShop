@@ -3,8 +3,15 @@
     font-family: "Yekan Bakh";
     src: url("../src/assets/fonts/YekanBakh-Regular.woff2");
 }
-  
-  
+
+
 *{
     font-family: "Yekan Bakh";
+}
+
+html{
+  overflow-x: hidden;
+}
+body{
+  overflow-x: hidden;
 }

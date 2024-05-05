@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { ShopItemComponent } from './shop-item/shop-item.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [ShopItemComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Yekan Bakh";
+    src: url("../src/assets/fonts/YekanBakh-Regular.woff2");
+}
+  
+  
+*{
+    font-family: "Yekan Bakh";
+}

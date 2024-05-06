@@ -1,0 +1,35 @@
+.shopItemContainer{
+    width: 95px;
+}
+
+.homeSlider .items{
+    flex-wrap: nowrap;
+    gap: 10px;
+    overflow-y: scroll;
+    direction: rtl;
+    padding-left: 20px;
+}
+.homeSlider .items::-webkit-scrollbar{
+    display: none;
+}
+.homeBanner .image{
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.homeBanner .image img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+}
+.homeSlider .header .title{
+    font-size: 11px;
+    font-weight: 600;
+}
+.homeBanners{
+    margin-bottom: 90px;
+}
+.category .title p{
+    font-weight: 600;
+}

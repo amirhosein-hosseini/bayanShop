@@ -5,6 +5,13 @@
 }
 
 
+/* color variables */
+:root{
+  --bluePrimary: #0044B4;
+}
+
+
+
 *{
     font-family: "Yekan Bakh";
 }

@@ -1,12 +1,13 @@
-<div class="homeBanner">
+<!-- <div class="homeBanner">
     <div class="row">
         <div class="col-12">
             <img class="col-12" src="../../assets/images/banner.png" alt="banner" />
         </div>
     </div>
-</div>
+</div> -->
 
 
+<app-slider [slides]="slides"></app-slider>
 
 <div class="category container-lg mt-3">
     <div class="title">
@@ -50,18 +51,59 @@
 
 
 
-<div class="homeSlider container">
-  <p class="title">
-    لباس و اکسسوری
-  </p>
-  <div class="row flex items">
-    <app-shop-item />
-    <app-shop-item />
-    <app-shop-item />
-    <app-shop-item />
-    <app-shop-item />
-    <app-shop-item />
-    <app-shop-item />
-    <app-shop-item />
+<div class="homeSlider container text-start mt-5">
+  <div class="text-right"> 
+    <div class="header">
+        <p class="title text-end">
+            لباس و اکسسوری
+        </p>
+    </div>
   </div>
+  <div class="row d-flex items">
+    <app-shop-item class="shopItemContainer" />
+    <app-shop-item class="shopItemContainer" />
+    <app-shop-item class="shopItemContainer" />
+    <app-shop-item class="shopItemContainer" />
+    <app-shop-item class="shopItemContainer" />
+    <app-shop-item class="shopItemContainer" />
+    <app-shop-item class="shopItemContainer" />
+    <app-shop-item class="shopItemContainer" />
+  </div>
+</div>
+
+
+
+<div class="homeSlider container text-start mt-5">
+    <div class="text-right"> 
+        <div class="header">
+            <p class="title text-end">
+                لوازم و تحریر
+            </p>
+        </div>
+    </div>
+  <div class="row d-flex items">
+    <app-shop-item class="shopItemContainer" />
+    <app-shop-item class="shopItemContainer" />
+    <app-shop-item class="shopItemContainer" />
+    <app-shop-item class="shopItemContainer" />
+    <app-shop-item class="shopItemContainer" />
+    <app-shop-item class="shopItemContainer" />
+    <app-shop-item class="shopItemContainer" />
+    <app-shop-item class="shopItemContainer" />
+  </div>
+</div>
+
+
+
+<div class="homeBanners">
+    <div class="homeBanner container mt-5">
+        <div class="image">
+            <img src="../../assets/images/homebanner1.png" alt="" />
+        </div>
+    </div>
+    <div class="homeBanner container mt-2 mb-5">
+        <div class="image">
+            <img src="../../assets/images/homebanner1.png" alt="" />
+        </div>
+    </div>
 </div>

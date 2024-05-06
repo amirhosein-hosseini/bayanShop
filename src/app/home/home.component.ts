@@ -11,9 +11,16 @@ import { ShopItemComponent } from './shop-item/shop-item.component';
 })
 export class HomeComponent {
   slides = [
-    { imageUrl: '../../assets/images/banner.png' },
-    { imageUrl: '../../assets/images/banner.png' },
-    { imageUrl: '../../assets/images/banner.png' }
+    { 
+      imageUrl: '../../assets/images/bookcategory.png', 
+      title: 'Slide 1', 
+      description: 'Description for slide 1' 
+    },
+    { 
+      imageUrl: '../../assets/images/bookcategory.png', 
+      title: 'Slide 2', 
+      description: 'Description for slide 2' 
+    }
   ];
 
   slideConfig = {

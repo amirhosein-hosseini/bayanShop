@@ -1,0 +1,49 @@
+.singleShop{
+    margin-bottom: 100px;
+}
+.singleShop .image{
+    width: 100%;
+    max-height: 460px;
+    overflow: hidden;
+}
+.singleShop .image img{
+    object-fit: cover;
+    width: 100%;
+}
+.singleShop .desc{
+    border-radius: 30px;
+    position: relative;
+    margin-top: -50px;
+}
+.sizeTitle{
+    font-size: 16px;
+    direction: rtl;
+}
+.singleShop .desc .header .title p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.singleShop .desc .header .breadCrump p{
+    font-size: 11px;
+    font-weight: 400;
+}
+.size .item{
+    width: 32px;
+    height: 32px;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 50%;
+}
+.singleShop .description p{
+    direction: rtl;
+    font-size: 14px;
+    line-height: 134.5%;
+    color: rgba(0, 0, 0, 0.6);
+}
+.singleShop .intro .title{
+    font-size: 18px;   
+}
+.singleShop .items .item{
+    background: rgba(12, 21, 36, 0.05);
+    font-size: 12px;
+}

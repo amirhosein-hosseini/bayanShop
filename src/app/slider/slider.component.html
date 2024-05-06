@@ -1,5 +1,7 @@
 <div class="slider">
     <div *ngFor="let slide of slides" class="slide">
       <img [src]="slide.imageUrl" alt="Slide Image">
+      <h3>{{ slide.title }}</h3>
+      <p>{{ slide.description }}</p>
     </div>
 </div>

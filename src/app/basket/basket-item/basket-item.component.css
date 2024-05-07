@@ -1,0 +1,42 @@
+.basketItem{
+    border-bottom: 1px solid black;
+}
+.basketItem .intro .image{
+    max-width: 105px;
+}
+.basketItem .intro .image img{
+    object-fit: cover;
+}
+.basketItem .intro .title{
+    font-size: 16px;
+    font-weight: 600;
+}
+.basketItem .intro .size .title{
+    font-weight: 400;
+}
+.basketItem .intro .size .items p{
+    width: 20px;
+    height: 20px;
+}
+.basketItem .addNumber .number p{
+    font-size: 17px;
+    font-weight: 600;
+}
+.basketItem .desc p{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.basketItemFooter .button{
+    background: #717171;
+    border-radius: 8px;
+    padding: 4px;
+}
+.basketItemFooter .button button{
+    font-size: 12px;
+    color: #717171;
+    padding: 4px 22px;
+    border-radius: 8px;
+}
+.basketItemFooter .button p{
+    font-size: 12px;
+}

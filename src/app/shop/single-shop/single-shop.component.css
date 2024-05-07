@@ -6,6 +6,10 @@
     max-height: 460px;
     overflow: hidden;
 }
+.singleShop .image .arrow{
+    top: 10px;
+    left: 10px;
+}
 .singleShop .image img{
     object-fit: cover;
     width: 100%;
@@ -33,7 +37,7 @@
     background: white;
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 50%;
-    font-size: 16px;
+    font-size: 12px;
 }
 .size .item.active{
     background: black;

@@ -1,4 +1,5 @@
 import { Component , OnInit } from '@angular/core';
+import { HeaderService } from '../layout/header/header.service';
 import { SliderComponent } from '../slider/slider.component';
 import { ShopItemComponent } from './shop-item/shop-item.component';
 
@@ -10,16 +11,18 @@ import { ShopItemComponent } from './shop-item/shop-item.component';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+
+  constructor(private headerService: HeaderService) {
+    this.headerService.shouldDisplayHeader = true; // Set shouldDisplayHeader to false for Singlepage component
+  }
+
+
   slides = [
     { 
-      imageUrl: '../../assets/images/bookcategory.png', 
-      title: 'Slide 1', 
-      description: 'Description for slide 1' 
+      imageUrl: '../../assets/images/banner.png', 
     },
     { 
-      imageUrl: '../../assets/images/bookcategory.png', 
-      title: 'Slide 2', 
-      description: 'Description for slide 2' 
+      imageUrl: '../../assets/images/banner.png', 
     }
   ];
 

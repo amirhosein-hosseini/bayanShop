@@ -1,0 +1,7 @@
+.slick-slide{
+    overflow: hidden;
+}
+.slick-slide img{
+    object-fit: cover;
+    width: 100%;
+}

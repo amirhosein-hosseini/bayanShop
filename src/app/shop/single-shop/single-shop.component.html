@@ -1,5 +1,23 @@
 <div class="singleShop">
-    <div class="image">
+    <div class="image position-relative">
+            <a routerLink="/shop" routerLinkActive="active" ariaCurrentWhenActive="page">
+                <div class="arrow position-absolute">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <g filter="url(#filter0_b_2798_2845)">
+                    <path d="M20.0002 36.6666C29.2049 36.6666 36.6668 29.2047 36.6668 20C36.6668 10.7952 29.2049 3.33331 20.0002 3.33331C10.7954 3.33331 3.3335 10.7952 3.3335 20C3.3335 29.2047 10.7954 36.6666 20.0002 36.6666Z" fill="black" fill-opacity="0.2"/>
+                    </g>
+                    <path d="M22.1001 25.8833L16.2334 20L22.1001 14.1166" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <defs>
+                    <filter id="filter0_b_2798_2845" x="-0.666504" y="-0.666687" width="41.3335" height="41.3333" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="2"/>
+                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2798_2845"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2798_2845" result="shape"/>
+                    </filter>
+                    </defs>
+                </svg>
+                </div>
+            </a>
         <img src="../../../assets/images/singleshopimage.png" alt="" />
     </div>
     <div class="desc bg-white py-4">
@@ -22,29 +40,29 @@
                         سایز:
                     </p>
                     <div class="items d-flex align-items-center gap-2">
-                        <div class="item d-flex align-items-center justify-content-center">
+                        <div class="item d-flex align-items-center justify-content-center" (click)="setActive('s')" [class.active]="activeSize === 's'">
                             <span>
                                 s
                             </span>
                         </div>
-                        <div class="item d-flex align-items-center justify-content-center">
+                        <div class="item d-flex align-items-center justify-content-center" (click)="setActive('m')" [class.active]="activeSize === 'm'">
                             <span>
-                                s
+                                m
                             </span>
                         </div>
-                        <div class="item d-flex align-items-center justify-content-center active">
+                        <div class="item d-flex align-items-center justify-content-center active" (click)="setActive('l')" [class.active]="activeSize === 'l'">
                             <span>
-                                s
+                                l
                             </span>
                         </div>
-                        <div class="item d-flex align-items-center justify-content-center">
+                        <div class="item d-flex align-items-center justify-content-center" (click)="setActive('xl')" [class.active]="activeSize === 'xl'">
                             <span>
-                                s
+                                xl
                             </span>
                         </div>
-                        <div class="item d-flex align-items-center justify-content-center">
+                        <div class="item d-flex align-items-center justify-content-center" (click)="setActive('xxl')" [class.active]="activeSize === 'xxl'">
                             <span>
-                                s
+                                xxl
                             </span>
                         </div>
                     </div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HeaderService } from '../../layout/header/header.service';
 
 @Component({
   selector: 'app-single-shop',
@@ -12,4 +13,15 @@ import { Component } from '@angular/core';
 })
 export class SingleShopComponent {
 
+
+  constructor(public headerService: HeaderService) {
+    this.headerService.shouldDisplayHeader = false; // Set shouldDisplayHeader to false for Singlepage component
+  }
+
+
+  activeSize: string = ''; // Property to store the active size
+
+  setActive(size: string): void {
+    this.activeSize = size;
+  }
 }

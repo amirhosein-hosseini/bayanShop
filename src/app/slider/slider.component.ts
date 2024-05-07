@@ -17,7 +17,7 @@ export class SliderComponent implements AfterViewInit {
   ngAfterViewInit() {
     $(this.elementRef.nativeElement).find('.slider').slick({
       autoplay: true, // Enable autoplay
-      autoplaySpeed: 2000, // Autoplay speed in milliseconds
+      autoplaySpeed: 3000, // Autoplay speed in milliseconds
       dots: true
     });
   }

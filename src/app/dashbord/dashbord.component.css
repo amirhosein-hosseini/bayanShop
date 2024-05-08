@@ -1,0 +1,13 @@
+.dashbordHeader{
+    background: rgba(217, 217, 217, 0.3);
+}
+.dashbordHeader .name .title p{
+    font-size: 19px;
+    color: #356DFA;
+}
+.dashbordHeader .phone p{
+    font-size: 14px;
+}
+.dashbordList .item{
+    border-bottom: 1px solid #0000004D;
+}

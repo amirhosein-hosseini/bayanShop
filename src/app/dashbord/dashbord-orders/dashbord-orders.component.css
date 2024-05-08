@@ -1,0 +1,31 @@
+.dashbordHeader{
+    background: rgba(217, 217, 217, 0.3);
+}
+.dashbordHeader .name .title p{
+    font-size: 19px;
+    color: #356DFA;
+}
+.dashbordHeader .phone p{
+    font-size: 14px;
+}
+
+.dashbordNav{
+    background: rgba(217, 217, 217, 0.3);
+}
+.dashbordNav .item p{
+    font-size: 14px;
+}
+.dashbordNav .item.active p{
+    position: relative;
+    font-weight: 600;
+}
+.dashbordNav .item.active p::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    background: black;
+    border-radius: 10px;
+    bottom: -8px;
+    width: 100%;
+    left: 0;
+}

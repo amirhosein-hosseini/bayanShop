@@ -14,7 +14,7 @@ export class BasketItemComponent {
     this.number += 1;
   }  
   decrementNumber() {
-    if(this.number > 0) {
+    if(this.number > 1) {
       this.number -= 1;
     }
   }

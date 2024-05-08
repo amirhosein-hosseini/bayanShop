@@ -1,0 +1,21 @@
+.dashbordHeader{
+    background: rgba(217, 217, 217, 0.3);
+}
+.dashbordHeader .name .title p{
+    font-size: 19px;
+    color: #356DFA;
+}
+.dashbordHeader .phone p{
+    font-size: 14px;
+}
+.dashbordAddress .addressList .item p{
+    font-size: 14px;
+}
+.dashbordAddress .addressList .addAddress .button button{
+    background: transparent;
+    border: 1px solid #EB0E23 !important;
+    padding: 4px 14px;
+    border-radius: 5px;
+    font-size: 11px;
+    color: #EB0E23;
+}

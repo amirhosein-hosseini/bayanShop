@@ -69,3 +69,123 @@
 .singleShop .addToBasket .price{
     direction: rtl;
 }
+
+@media only screen and (min-width:768px){
+    .webShop .images{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .webShop .images .largeImage{
+        max-width: 480px;
+        overflow: hidden;
+        border-radius: 5px;
+        max-height: 500px;
+    }
+    .webShop .images .largeImage img{
+        object-fit: cover;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .webShop .images .smallImages{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        justify-content: space-between;
+    }
+    .webShop .images .smallImages .item{
+        max-width: 153px;
+        overflow: hidden;
+        border-radius: 5px;
+        max-height: 170px;
+    }
+    .webShop .images .smallImages .item img{
+        object-fit: cover;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .webShop .desc .title{
+        font-weight: 600;
+        font-size: 34px;
+    }
+    .webShop .desc .price{
+        font-weight: 800;
+        color: #676767;
+        font-size: 34px;
+    }
+    .webShop .sizeTitle{
+        font-size: 24px;
+    }
+    .webShop .colorTitle{
+        font-size: 24px;
+    }
+    .webShop .size .item{
+        width: 32px;
+        height: 32px;
+        background: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0;
+        color: white;
+        font-size: 20px;
+    }
+    .webShop .size .item.notActive{
+        background: #C9C9C9;
+    }
+    .webShop .color .item{
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        justify-content: center;
+        align-items: center;
+    }
+    .webShop .color .item p{
+        font-size: 12px;
+    }
+    .webShop .color .colorWrapper{
+        width: 32px;
+        height: 32px;
+        border: 1px solid black;
+    }
+    .webShop .addToCartButton button{
+        gap: 6px;
+        border: none;
+        padding: 8px 20px;
+        background-color: black;
+        color: white;
+        font-size: 16px;
+        border-radius: 4px;
+    }
+    .webShop .intro{
+        max-width: 600px;
+    }
+    .webShop .intro .navBar{
+        border-bottom: 1px solid #AEAEAE;
+    }
+    .webShop .intro .navBar .item p{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .webShop .intro .navBar .item.active p{
+        position: relative;
+    }
+    .webShop .intro .navBar .item.active p::after{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 4px;
+        background: black;
+        border-radius: 10px;
+        left: 0;
+        bottom: -3px;
+    }
+    .webShop .intro .description p{
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 18px;
+    }
+    .webShop .images .points .item p{
+        font-size: 14px;
+        font-weight: 600;
+    }
+}

@@ -1,42 +1,34 @@
 .basketItem{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(160, 160, 160, 0.2);
 }
-.basketItem .intro .image{
-    max-width: 105px;
+.basketItem .image{
+    max-width: 160px;
+    max-height: 221px;
+    overflow: hidden;
+    border-radius: 4px;
 }
-.basketItem .intro .image img{
+.basketItem .image img{
     object-fit: cover;
+    width: 100%;
+    border-radius: 4px;
 }
-.basketItem .intro .title{
-    font-size: 16px;
+.basketItem .desc .title{
+    font-size: 24px;
     font-weight: 600;
 }
-.basketItem .intro .size .title{
-    font-weight: 400;
-}
-.basketItem .intro .size .items p{
-    width: 20px;
-    height: 20px;
-}
-.basketItem .addNumber .number p{
-    font-size: 17px;
+.basketItem .desc .price{
+    font-size: 24px;
+    color: #676767;
     font-weight: 600;
 }
-.basketItem .desc p{
-    font-size: 13px;
-    color: rgba(0, 0, 0, 0.6);
+.basketItem .quantityBox{
+    border: 1px solid #ABABAB;
+    border-radius: 4px;
 }
-.basketItemFooter .button{
-    background: #717171;
-    border-radius: 8px;
-    padding: 4px;
+.basketItem .quantityBox .prev{
+    border-right: 1px solid #ABABAB;
 }
-.basketItemFooter .button button{
-    font-size: 12px;
-    color: #717171;
-    padding: 4px 22px;
-    border-radius: 8px;
+.basketItem .quantityBox .next{
+    border-left: 1px solid #ABABAB;
 }
-.basketItemFooter .button p{
-    font-size: 12px;
-}
+

@@ -1,125 +1,269 @@
-<div class="singleShop">
-    <div class="image position-relative">
-            <a routerLink="/shop" routerLinkActive="active" ariaCurrentWhenActive="page">
-                <div class="arrow position-absolute">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                    <g filter="url(#filter0_b_2798_2845)">
-                    <path d="M20.0002 36.6666C29.2049 36.6666 36.6668 29.2047 36.6668 20C36.6668 10.7952 29.2049 3.33331 20.0002 3.33331C10.7954 3.33331 3.3335 10.7952 3.3335 20C3.3335 29.2047 10.7954 36.6666 20.0002 36.6666Z" fill="black" fill-opacity="0.2"/>
-                    </g>
-                    <path d="M22.1001 25.8833L16.2334 20L22.1001 14.1166" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <defs>
-                    <filter id="filter0_b_2798_2845" x="-0.666504" y="-0.666687" width="41.3335" height="41.3333" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="2"/>
-                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2798_2845"/>
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2798_2845" result="shape"/>
-                    </filter>
-                    </defs>
-                </svg>
+
+
+<ng-container *ngIf="isMobile">
+    <div class="singleShop">
+        <div class="image position-relative">
+                <a routerLink="/shop" routerLinkActive="active" ariaCurrentWhenActive="page">
+                    <div class="arrow position-absolute">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <g filter="url(#filter0_b_2798_2845)">
+                        <path d="M20.0002 36.6666C29.2049 36.6666 36.6668 29.2047 36.6668 20C36.6668 10.7952 29.2049 3.33331 20.0002 3.33331C10.7954 3.33331 3.3335 10.7952 3.3335 20C3.3335 29.2047 10.7954 36.6666 20.0002 36.6666Z" fill="black" fill-opacity="0.2"/>
+                        </g>
+                        <path d="M22.1001 25.8833L16.2334 20L22.1001 14.1166" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                        <filter id="filter0_b_2798_2845" x="-0.666504" y="-0.666687" width="41.3335" height="41.3333" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="2"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2798_2845"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2798_2845" result="shape"/>
+                        </filter>
+                        </defs>
+                    </svg>
+                    </div>
+                </a>
+            <img src="../../../assets/images/singleshopimage.png" alt="" />
+        </div>
+        <div class="desc bg-white py-4">
+            <div class="container text-end d-flex flex-column gap-4">
+                <div class="header">
+                    <div class="title">
+                        <p>
+                            تیشرت مشکی آستین کوتاه ساده  
+                        </p>
+                    </div>
+                    <div class="breadCrump">
+                        <p>
+                            مد و پوشاک / مردانه / اسپرت
+                        </p>
+                    </div>
                 </div>
-            </a>
-        <img src="../../../assets/images/singleshopimage.png" alt="" />
-    </div>
-    <div class="desc bg-white py-4">
-        <div class="container text-end d-flex flex-column gap-4">
-            <div class="header">
-                <div class="title">
+                <div class="row">
+                    <div class="col-12 size d-flex align-items-center justify-content-between flex-row-reverse">
+                        <p class="sizeTitle mb-0">
+                            سایز:
+                        </p>
+                        <div class="items d-flex align-items-center gap-2">
+                            <div class="item d-flex align-items-center justify-content-center" (click)="setActive('s')" [class.active]="activeSize === 's'">
+                                <span>
+                                    s
+                                </span>
+                            </div>
+                            <div class="item d-flex align-items-center justify-content-center" (click)="setActive('m')" [class.active]="activeSize === 'm'">
+                                <span>
+                                    m
+                                </span>
+                            </div>
+                            <div class="item d-flex align-items-center justify-content-center active" (click)="setActive('l')" [class.active]="activeSize === 'l'">
+                                <span>
+                                    l
+                                </span>
+                            </div>
+                            <div class="item d-flex align-items-center justify-content-center" (click)="setActive('xl')" [class.active]="activeSize === 'xl'">
+                                <span>
+                                    xl
+                                </span>
+                            </div>
+                            <div class="item d-flex align-items-center justify-content-center" (click)="setActive('xxl')" [class.active]="activeSize === 'xxl'">
+                                <span>
+                                    xxl
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="description">
                     <p>
-                        تیشرت مشکی آستین کوتاه ساده  
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است. 
                     </p>
                 </div>
-                <div class="breadCrump">
-                    <p>
-                        مد و پوشاک / مردانه / اسپرت
+                <div class="intro">
+                    <p class="title">
+                        مشخصات محصول
                     </p>
+                    <div class="items d-flex flex-column gap-1">
+                        <div class="item d-flex flex-row-reverse justify-content-between p-2">
+                            <p class="mb-0">
+                                آستین 
+                            </p>
+                            <span class="mb-0">
+                                کوتاه
+                            </span>
+                        </div>
+                        <div class="item d-flex flex-row-reverse justify-content-between p-2">
+                            <p class="mb-0">
+                                طرح پارچه 
+                            </p>
+                            <span class="mb-0">
+                                ساده
+                            </span>
+                        </div>
+                        <div class="item d-flex flex-row-reverse justify-content-between p-2">
+                            <p class="mb-0">
+                                کشور تولید کننده 
+                            </p>
+                            <span class="mb-0">
+                                ایران
+                            </span>
+                        </div>
+                        <div class="item d-flex flex-row-reverse justify-content-between p-2">
+                            <p class="mb-0">
+                                مناسب استفاده 
+                            </p>
+                            <span class="mb-0">
+                                روزمره،اسپرت
+                            </span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12 size d-flex align-items-center justify-content-between flex-row-reverse">
-                    <p class="sizeTitle mb-0">
-                        سایز:
+                <div class="addToBasket d-flex align-items-center justify-content-between mt-4 bg-black">
+                    <p class="price text-white mb-0">
+                        ۴۵۰،۰۰۰ <span>تومان</span>
                     </p>
-                    <div class="items d-flex align-items-center gap-2">
-                        <div class="item d-flex align-items-center justify-content-center" (click)="setActive('s')" [class.active]="activeSize === 's'">
-                            <span>
-                                s
-                            </span>
-                        </div>
-                        <div class="item d-flex align-items-center justify-content-center" (click)="setActive('m')" [class.active]="activeSize === 'm'">
-                            <span>
-                                m
-                            </span>
-                        </div>
-                        <div class="item d-flex align-items-center justify-content-center active" (click)="setActive('l')" [class.active]="activeSize === 'l'">
-                            <span>
-                                l
-                            </span>
-                        </div>
-                        <div class="item d-flex align-items-center justify-content-center" (click)="setActive('xl')" [class.active]="activeSize === 'xl'">
-                            <span>
-                                xl
-                            </span>
-                        </div>
-                        <div class="item d-flex align-items-center justify-content-center" (click)="setActive('xxl')" [class.active]="activeSize === 'xxl'">
-                            <span>
-                                xxl
-                            </span>
-                        </div>
-                    </div>
+                    <button class="bg-white border-none text-black px-3 py-2">
+                        افزودن به سبد خرید
+                    </button>
                 </div>
-            </div>
-            <div class="description">
-                <p>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است. 
-                </p>
-            </div>
-            <div class="intro">
-                <p class="title">
-                    مشخصات محصول
-                </p>
-                <div class="items d-flex flex-column gap-1">
-                    <div class="item d-flex flex-row-reverse justify-content-between p-2">
-                        <p class="mb-0">
-                            آستین 
-                        </p>
-                        <span class="mb-0">
-                            کوتاه
-                        </span>
-                    </div>
-                    <div class="item d-flex flex-row-reverse justify-content-between p-2">
-                        <p class="mb-0">
-                            طرح پارچه 
-                        </p>
-                        <span class="mb-0">
-                            ساده
-                        </span>
-                    </div>
-                    <div class="item d-flex flex-row-reverse justify-content-between p-2">
-                        <p class="mb-0">
-                            کشور تولید کننده 
-                        </p>
-                        <span class="mb-0">
-                            ایران
-                        </span>
-                    </div>
-                    <div class="item d-flex flex-row-reverse justify-content-between p-2">
-                        <p class="mb-0">
-                            مناسب استفاده 
-                        </p>
-                        <span class="mb-0">
-                            روزمره،اسپرت
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="addToBasket d-flex align-items-center justify-content-between mt-4 bg-black">
-                <p class="price text-white mb-0">
-                    ۴۵۰،۰۰۰ <span>تومان</span>
-                </p>
-                <button class="bg-white border-none text-black px-3 py-2">
-                    افزودن به سبد خرید
-                </button>
             </div>
         </div>
     </div>
-</div>
+</ng-container>
+
+
+<ng-container *ngIf="!isMobile">
+    <div class="webShop container d-flex gap-5 mt-4 flex-row-reverse">
+        <div class="images">
+            <div class="largeImage">
+                <img src="../../../assets/images/largeproductimage.png" alt="" />
+            </div>
+            <div class="smallImages">
+                <div class="item">
+                    <img src="../../../assets/images/largeproductimage.png" alt="" />
+                </div>
+                <div class="item">
+                    <img src="../../../assets/images/largeproductimage.png" alt="" />
+                </div>
+                <div class="item">
+                    <img src="../../../assets/images/largeproductimage.png" alt="" />
+                </div>
+            </div>
+            <div class="points mt-5 d-flex gap-4 justify-content-center align-items-center">
+                <div class="item d-flex justify-content-center align-items-center flex-column gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 17" fill="none">
+                        <path d="M19.1598 5.35515C19.1598 6.49516 18.9777 7.54895 18.6616 8.5261C18.6041 8.72727 18.3646 8.78475 18.1922 8.66021C17.148 7.88424 15.8739 7.47231 14.5614 7.47231C11.2372 7.47231 8.5261 10.1834 8.5261 13.5076C8.5261 14.5423 8.79433 15.5577 9.30207 16.4582C9.45534 16.7265 9.27333 17.0714 8.98593 16.966C6.67718 16.1804 2.01178 13.316 0.498154 8.5261C0.182018 7.54895 0 6.49516 0 5.35515C0 2.39497 2.38539 0 5.32641 0C7.06037 0 8.61231 0.843029 9.57988 2.13631C10.5475 0.843029 12.0994 0 13.8334 0C16.7744 0 19.1598 2.39497 19.1598 5.35515Z" fill="#A3A3A3"/>
+                    </svg>
+                    <p>
+                        ضمانت اصالت کالا 
+                    </p>
+                </div>
+                <div class="item d-flex justify-content-center align-items-center flex-column gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 23 23" fill="none">
+                        <path d="M20.5968 14.8488C20.865 14.8488 21.0758 15.0596 21.0758 15.3278V16.2858C21.0758 17.8761 19.7921 19.1598 18.2018 19.1598C18.2018 17.5791 16.9085 16.2858 15.3279 16.2858C13.7472 16.2858 12.4539 17.5791 12.4539 19.1598H10.5379C10.5379 17.5791 9.24463 16.2858 7.66395 16.2858C6.08327 16.2858 4.78998 17.5791 4.78998 19.1598C3.19972 19.1598 1.91602 17.8761 1.91602 16.2858V14.3698C1.91602 13.8429 2.34711 13.4118 2.874 13.4118H11.9749C13.2969 13.4118 14.3699 12.3389 14.3699 11.0169V5.74794C14.3699 5.22104 14.801 4.78995 15.3279 4.78995H16.1326C16.8223 4.78995 17.4546 5.16356 17.7995 5.75752L18.4126 6.83046C18.4988 6.98374 18.3838 7.18492 18.2018 7.18492C16.8798 7.18492 15.8068 8.25787 15.8068 9.57989V12.4539C15.8068 13.7759 16.8798 14.8488 18.2018 14.8488H20.5968Z" fill="#A3A3A3"/>
+                        <path d="M7.6639 21.0757C8.72207 21.0757 9.57988 20.2179 9.57988 19.1598C9.57988 18.1016 8.72207 17.2438 7.6639 17.2438C6.60574 17.2438 5.74792 18.1016 5.74792 19.1598C5.74792 20.2179 6.60574 21.0757 7.6639 21.0757Z" fill="#A3A3A3"/>
+                        <path d="M15.3278 21.0757C16.386 21.0757 17.2438 20.2179 17.2438 19.1598C17.2438 18.1016 16.386 17.2438 15.3278 17.2438C14.2697 17.2438 13.4119 18.1016 13.4119 19.1598C13.4119 20.2179 14.2697 21.0757 15.3278 21.0757Z" fill="#A3A3A3"/>
+                        <path d="M21.0757 12.0036V13.4118H18.2018C17.6749 13.4118 17.2438 12.9807 17.2438 12.4538V9.57988C17.2438 9.05298 17.6749 8.62189 18.2018 8.62189H19.4376L20.8267 11.0552C20.9895 11.3426 21.0757 11.6683 21.0757 12.0036Z" fill="#A3A3A3"/>
+                        <path d="M12.5305 1.91599H5.45099C3.4967 1.91599 1.91602 3.49667 1.91602 5.45096V11.5629C1.91602 12.0898 2.34711 12.5209 2.874 12.5209H11.6396C12.6167 12.5209 13.4119 11.7258 13.4119 10.7486V2.79733C13.4119 2.30876 13.0191 1.91599 12.5305 1.91599ZM9.64698 6.77299L7.64479 8.70812C7.50109 8.84224 7.31907 8.9093 7.14663 8.9093C6.96461 8.9093 6.7826 8.84224 6.64848 8.70812L5.68091 7.78845C5.39351 7.51064 5.38393 7.0508 5.66175 6.76341C5.92999 6.47601 6.38982 6.47601 6.67722 6.74425L7.14663 7.1945L8.65067 5.73836C8.93807 5.46054 9.38832 5.47012 9.66614 5.75752C9.94396 6.04492 9.93438 6.49517 9.64698 6.77299Z" fill="#A3A3A3"/>
+                    </svg>
+                    <p>
+                        سریعترین ارسال 
+                    </p>
+                </div>
+                <div class="item d-flex justify-content-center align-items-center flex-column gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 23 23" fill="none">
+                        <path d="M12.6934 12.0515V13.9483C12.6934 14.6093 12.1569 15.1458 11.4959 15.1458C10.8349 15.1458 10.2984 14.6093 10.2984 13.9483V12.0515C9.95354 11.8407 9.6853 11.5342 9.4937 11.1701H2.874C2.34711 11.1701 1.91602 11.6012 1.91602 12.1281V15.5098C1.91602 18.585 4.40679 21.0757 7.48193 21.0757H15.5003C18.585 21.0757 21.0758 18.585 21.0758 15.5098V12.1281C21.0758 11.6012 20.6447 11.1701 20.1178 11.1701H13.4981C13.3065 11.5342 13.0383 11.8407 12.6934 12.0515Z" fill="#A3A3A3"/>
+                        <path d="M15.5099 1.91599H7.48193C4.40679 1.91599 1.91602 4.40675 1.91602 7.4819V8.77518C1.91602 9.30207 2.34711 9.73317 2.874 9.73317H9.26379C9.48412 8.46863 10.7391 7.56812 12.109 7.93215C12.8754 8.13333 13.4981 8.75602 13.6993 9.52241C13.7184 9.58947 13.7184 9.66611 13.728 9.73317H20.1178C20.6447 9.73317 21.0758 9.30207 21.0758 8.77518V7.4819C21.0758 4.40675 18.585 1.91599 15.5099 1.91599Z" fill="#A3A3A3"/>
+                    </svg>
+                    <p>
+                        ضمانت بهترین قیمت 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="desc text-end d-flex flex-column">
+            <div class="title">
+                <p class="mb-0">
+                    تیشرت مشکی آستین کوتاه ساده  
+                </p>
+            </div>
+            <div class="price">
+                <p class="mb-0">
+                    ۴۵۰،۰۰۰ تومان
+                </p>
+            </div>
+            <div class="size mt-3">
+                <p class="sizeTitle mb-0">
+                    سایز:
+                </p>
+                <div class="items d-flex justify-content-end mt-2 gap-3">
+                    <div class="item notActive">
+                        M
+                    </div>
+                    <div class="item">
+                        M
+                    </div>
+                    <div class="item">
+                        M
+                    </div>
+                </div>
+            </div>
+            <div class="color mt-3">
+                <p class="colorTitle mb-0">
+                    رنگ:
+                </p>
+                <div class="items d-flex justify-content-end mt-2 gap-3">
+                    <div class="item">
+                        <div class="colorWrapper" style="background: #ffffff;"></div>
+                        <p class="mb-0">
+                            سفید
+                        </p>
+                    </div>
+                    <div class="item">
+                        <div class="colorWrapper" style="background: #356DFA;"></div>
+                        <p class="mb-0">
+                            آبی
+                        </p>
+                    </div>
+                    <div class="item">
+                        <div class="colorWrapper" style="background: #000000;"></div>
+                        <p class="mb-0">
+                            مشکی
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="addToCartButton d-flex justify-content-end mt-5">
+                <button class="d-flex">
+                    <p class="mb-0">
+                        افزودن به سبد خرید 
+                    </p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M21.2653 10.5053C20.4529 10.9788 19.5081 11.25 18.5 11.25C15.4624 11.25 13 8.78757 13 5.75C13 5.4956 13.0173 5.24523 13.0507 5H4.71485L4.4766 3.80874C4.26626 2.75703 3.34283 2 2.27029 2H1.75C1.33579 2 1 2.33579 1 2.75C1 3.16421 1.33579 3.5 1.75 3.5H2.27029C2.6278 3.5 2.93562 3.75234 3.00573 4.10291L4.94301 13.7893C5.20009 15.0747 6.32874 16 7.63961 16H17.8772C19.1777 16 20.3003 15.0891 20.5682 13.8165L21.2653 10.5053Z" fill="white"/>
+                        <path d="M8 17C6.89543 17 6 17.8954 6 19C6 20.1046 6.89543 21 8 21C9.10457 21 10 20.1046 10 19C10 17.8954 9.10457 17 8 17Z" fill="white"/>
+                        <path d="M17 17C15.8954 17 15 17.8954 15 19C15 20.1046 15.8954 21 17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17Z" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5 2C18.9142 2 19.25 2.33579 19.25 2.75V5H21.5C21.9142 5 22.25 5.33579 22.25 5.75C22.25 6.16421 21.9142 6.5 21.5 6.5H19.25V8.75C19.25 9.16421 18.9142 9.5 18.5 9.5C18.0858 9.5 17.75 9.16421 17.75 8.75V6.5H15.5C15.0858 6.5 14.75 6.16421 14.75 5.75C14.75 5.33579 15.0858 5 15.5 5H17.75V2.75C17.75 2.33579 18.0858 2 18.5 2Z" fill="white"/>
+                    </svg>
+                </button>
+            </div>
+
+
+            <div class="intro text-end mt-5">
+                <div class="navBar d-flex pb-2 gap-3 justify-content-end mb-4">
+                    <div class="item .active">
+                        <p class="mb-0">
+                            توضیحات محصول 
+                        </p>
+                    </div>
+                    <div class="item">
+                        <p class="mb-0">
+                            اطلاعات تکمیلی 
+                        </p>
+                    </div>
+                </div>
+                <div class="description">
+                    <p class="mb-0">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>

@@ -21,10 +21,16 @@
     grid-template-columns: repeat(3,minmax(0,1fr));
     gap: 20px;
     margin: 0 auto;
+    direction: rtl;
 }
 .shopItemContainer{
     width: 95px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@media only screen and (min-width:768px){
+    .shopArchive .items{
+        grid-template-columns: repeat(8,minmax(0,1fr));
+    }
 }

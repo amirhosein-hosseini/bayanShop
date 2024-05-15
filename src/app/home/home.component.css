@@ -3,10 +3,12 @@
 }
 
 .homeSlider .items{
+    display: flex;
     flex-wrap: nowrap;
     gap: 10px;
-    overflow-y: scroll;
-    direction: rtl;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    direction: rtl; /* Set direction to left-to-right */
     padding-left: 20px;
 }
 .homeSlider .items::-webkit-scrollbar{
@@ -35,3 +37,26 @@
 }
 
 
+
+
+/* styles for website device  */
+.webHeader .title{
+    gap: 12px;
+}
+.webHeader .title p{
+    position: relative;
+    font-weight: 800;
+    white-space: nowrap;
+}
+@media only screen and (min-width:768px){
+    .homeSlider .items{
+        justify-content: center;
+        padding-left: 0;
+    }
+}
+.homeSlider .items .arrow{
+    width: 80px;
+}
+.homeSlider .items .arrow p{
+    font-size: 11px;
+}

@@ -4,6 +4,11 @@
     src: url("../src/assets/fonts/YekanBakh-Regular.woff2");
 }
 
+@font-face {
+  font-family: "SF Heavy";
+  src: url("../src/assets/fonts/SFUIText-Heavy.woff");
+}
+
 
 /* color variables */
 :root{
@@ -20,7 +25,7 @@ html{
   overflow-x: hidden;
 }
 body{
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 

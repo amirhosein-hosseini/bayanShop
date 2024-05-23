@@ -40,6 +40,10 @@
 
 
 /* styles for website device  */
+
+.webHeader{
+    margin-top: -100px;
+}
 .webHeader .title{
     gap: 12px;
 }
@@ -59,4 +63,58 @@
 }
 .homeSlider .items .arrow p{
     font-size: 11px;
+}
+
+
+
+
+
+.heroBackground{
+    position: relative;
+    margin-top: -120px;
+    overflow: hidden;
+    z-index: -1;
+}
+.heroBackground img{
+    object-fit: cover;
+    width: 100%;
+}
+
+
+.newProducts .title{
+    gap: 12px;
+}
+.newProducts .title p{
+    position: relative;
+    font-weight: 800;
+    white-space: nowrap;
+}
+.newProducts .items{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    direction: rtl; /* Set direction to left-to-right */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none
+}
+.newProducts .desc .logo{
+    margin-bottom: -55px;
+}
+.newProducts .desc .intro .title{
+    font-family: "SF Heavy";
+    color: white;
+    font-size: 50px;
+    margin-top: 0 !important;
+    margin-top: -40px !important;
+}
+.newProducts .desc .intro button{
+    background: transparent;
+    border: none;
+    display: flex;
+    color: white;
+    white-space: nowrap;
+    align-items: center;
+    gap: 8px;
 }

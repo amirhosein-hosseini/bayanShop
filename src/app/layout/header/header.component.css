@@ -1,3 +1,19 @@
 .webHeader .item p{
     font-size: 12px;
 }
+
+.webHeader{
+    fill: rgba(179, 179, 179, 0.25);
+    stroke-width: 4px;
+    stroke: #FFF;
+    backdrop-filter: blur(8.699999809265137px);
+}
+
+.logo{
+    max-width: 50px;
+    overflow: hidden;
+}
+.logo img{
+    object-fit: cover;
+    width: 100%;
+}
